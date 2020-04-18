@@ -1,0 +1,127 @@
+.letra
+{
+    font-family: 'hack', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #d3d7cf;
+
+    text-shadow: 0 0 1px #2e3436;
+}
+
+.colorVerde
+{
+    color: #99dd92;
+
+    text-shadow: 0 0 1px #2e3436;
+}
+
+.colorRojo
+{
+    color: #e29191;
+
+    text-shadow: 0 0 1px #2e3436;
+}
+
+.colorAmarillo
+{
+    color: #dfe592;
+}
+
+.colorRosa
+{
+    color: #949ace;
+}
+
+.separador
+{
+    margin-top: 60px;
+    margin-bottom: 40px;
+
+    border-width: 10px;
+    border-style: outset;
+    color: #949ace;
+}
+
+.espacioAbajo
+{
+    margin-bottom: 100px;
+}
+
+.acomodarEnlace
+{
+    text-align: right;
+}
+
+.acomodarEnlace > a:hover
+{
+    text-decoration: none;
+    filter: opacity(100%);
+}
+
+.pieDePagina
+{
+    margin-bottom: 8px;
+
+    border-width: 80px;
+    border-style: outset;
+    color: #949ace;
+}
+
+.centrar
+{
+    text-align: center;
+}
+
+#inicio
+{
+    color: #2e3436;
+    visibility: hidden;
+}
+
+/*----------------------------------------*/
+
+body
+{
+    background-color: #2e3436;
+}
+
+a
+{
+    text-decoration: none;
+    color: #94c4d3;
+    font-weight: 900;
+
+    text-shadow: 0 0 1px #2e3436;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+hr
+{
+    /* arriba, derecha, abajo, izquierda */
+    margin: 40px 0px 40px 0px;
+
+    color: #626689;
+}
+
+pre
+{
+    /* arriba, derecha, abajo, izquierda */
+    margin: 40px 0px 40px 0px;
+}
+
+/*----------------------------------------*/
+
+img
+{
+    width: 80%;
+    height: auto;
+}
+
+@font-face {
+    font-family: hack;
+    src: url(HackRegular.ttf);
+}
+
