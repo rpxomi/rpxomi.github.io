@@ -87,7 +87,7 @@
             <p>Also for create the library file of GLAD, I compile the <i>"glad.c"</i> file using <i>"clang"</i>
             (so if it is not there yet, should install the clang compiler to make this in the same manner that show here) and run in a terminal this command.<br>
             <code class="colorAmarillo">clang -c glad.c</code></p>
-            <p>And in the same place where the <i>"o"</i> file from the compilation made with <i>"clang"</i> is, execute in a terminal the <i>"ar"</i> command for generate an .a file.<br>
+            <p>And in the same place where the <i>"o"</i> file from the compilation made with <i>"clang"</i> is, execute in a terminal the <i>"ar"</i> command for generate an .a file (same thing with "ar" program... if you don't have this, you need to install it).<br>
             <code class="colorAmarillo">ar rcs libglad.a glad.o</code></p>
             <p>In this case the <i>"ar"</i> command is used to make the library static, so the linker does not dynamically search for the library in the folders of the operating system.</p>
             <p>Only the static .a file from our <i>"lib"</i> folder will be used (we must manually place the .a file, inside our <i>"lib"</i> folder).</p>
