@@ -32,7 +32,8 @@
             <p>However, the files downloaded from <a href="https://glad.dav1d.de/" target="_blank">https://glad.dav1d.de/</a> are stored in our local folders.
             So, when compiling the project, GLAD files are not found.</p>
             
-            <p>Because they are not in the system directories; they remain where we downloaded them!</p><br><br>
+            <p>Because they are not in the system directories; they remain where we downloaded them!</p><br>
+            <br>
 
 
             <div class="separadorChico"><span>&#32;</span></div>
@@ -54,13 +55,11 @@
             <p>These two folders also appear in the list of available downloads after generating the files by pressing the <code>GENERATE</code> button at the bottom of the webpage.</p>
             <br>
             <p class="colorAmarillo">&#35;&#35;&#35; <b>This is NOT the compatibility profile, only the OpenGL core</b> &#35;&#35;&#35;</p>
-            <a href="glad001.png" target="_blank"><img class="imagenesGlad" src="glad001.png" alt="Glad site"></a>
-            <br>
+            <a href="glad001.png" target="_blank"><img class="imagenesGlad" src="glad001.png" alt="Glad site"></a><br>
             <br>
             <br>
             <p>Download the <code>.zip</code> file or the individual folders, <u>but not everything</u>!</p>
-            <a href="glad002.png" target="_blank"><img class="imagenesGlad" src="glad002.png" alt="Glad files"></a>
-            <br>
+            <a href="glad002.png" target="_blank"><img class="imagenesGlad" src="glad002.png" alt="Glad files"></a><br>
             <br>
 
 
@@ -86,7 +85,8 @@
             <p><u>Original:</u><br>
             <code class="colorRojo">#include <span>&#60;</span>glad/glad.h<span>&#62;</span></code></p>
             <p><u>Modified:</u><br>
-            <code class="colorVerde">#include "include/glad/glad.h"</code></p><br><br>
+            <code class="colorVerde">#include "include/glad/glad.h"</code></p><br>
+            <br>
 
 
             <div class="separadorChico"><span>&#32;</span></div>
@@ -104,7 +104,8 @@
             <code class="colorAmarillo">ar rcs libglad.a glad.o</code></p>
             
             <p>The <code>ar</code> command is used here to create a static library so that the linker does not dynamically search for the library in system directories.</p>
-            <p>The static <code>.a</code> file should be manually placed inside the <code>lib</code> folder of our project.</p><br><br>
+            <p>The static <code>.a</code> file should be manually placed inside the <code>lib</code> folder of our project.</p><br>
+            <br>
 
 
             <div class="separadorChico"><span>&#32;</span></div>
@@ -119,8 +120,7 @@
                 <li><code>main.cpp</code> (file)</li>
                 <li><code>glad.c</code> (file)</li>
             </ul>
-            <a href="folders.png" target="_blank"><img class="imagenCarpetas" src="folders.png" alt="Folders"></a>
-            <br>
+            <a href="folders.png" target="_blank"><img class="imagenCarpetas" src="folders.png" alt="Folders"></a><br>
             <br>
 
 
@@ -136,7 +136,8 @@
                 <li>The <code>-L</code> option specifies the path where the <code>lib</code> folder is located.</li>
                 <br>
                 <li>The <code>-l</code> option specifies the libraries used in the project (one <code>-l</code> flag per library).</li>
-            </ul><br><br>
+            </ul><br>
+            <br>
 
 
             <div class="separadorChico"><span>&#32;</span></div>
