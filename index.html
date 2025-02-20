@@ -90,10 +90,11 @@
             <div class="separadorChico"><span>&#32;</span></div>
 
 
-            <p>To create the GLAD library file, compile <code>glad.c</code> using <code>clang</code>
-            If <code>clang</code> is not installed, you will need to install it before proceeding.<br>
-            Run the following command in a terminal:
-            <code class="colorAmarillo">clang -c glad.c</code></p>
+            <p>To create the GLAD library file, compile <code>glad.c</code> using <code>clang</code></p><br>
+            <p>If <code>clang</code> is not installed, you will need to install it before proceeding.</p><br>
+            
+            <p>Run the following command in a terminal:</p>
+            <p><code class="colorAmarillo">clang -c glad.c</code></p>
             
             <p>After compilation, an object file (<code>glad.o</code>) will be created.<br>
             Next, use the <code>ar</code> command to generate a static <code>.a</code> library file. If <code>ar</code> is not installed, you will need to install it.<br>
@@ -120,7 +121,7 @@
             <div class="separadorChico"><span>&#32;</span></div>
 
 
-            <p><u>Compilation Example</u></p><br>
+            <p><u>Compilation Example</u></p>
             <p>To compile the project, use the following command:</p>
             <p><code class="colorAmarillo">g++ main.cpp glad.c -o output <span class="colorVerde">-Lfolder -lglad -lglfw3</span></code></p>
             <ul>
