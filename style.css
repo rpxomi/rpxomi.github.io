@@ -22,6 +22,13 @@ a:hover
     text-decoration: underline;
 }
 
+code
+{
+    background-color: #4d4d4d;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
 /*----------------------------------------*/
 
 .letra
