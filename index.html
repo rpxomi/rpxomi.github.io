@@ -93,11 +93,12 @@
             <p>To create the GLAD library file, compile <code>glad.c</code> using <code>clang</code>.
             If <code>clang</code> is not installed, you will need to install it before proceeding.</p>
             
-            <p>Run the following command in a terminal:</p>
-            <p><code class="colorAmarillo">clang -c glad.c</code></p>
+            <p>To compile, execute the following command in a terminal:<br>
+            <code class="colorAmarillo">clang -c glad.c</code></p>
             
-            <p>After compilation, an object file (<code>glad.o</code>) will be created.<br>
-            Next, use the <code>ar</code> command to generate a static <code>.a</code> library file. If <code>ar</code> is not installed, you will need to install it.<br>
+            <p>After compilation, an object file (<code>glad.o</code>) will be created.</p><br>
+            
+            <p>Next, use the <code>ar</code> command to generate a static <code>.a</code> library file. If <code>ar</code> is not installed, you will need to install it.<br>
             <code class="colorAmarillo">ar rcs libglad.a glad.o</code></p>
             
             <p>The <code>ar</code> command is used here to create a static library so that the linker does not dynamically search for the library in system directories.</p>
