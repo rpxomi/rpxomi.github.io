@@ -16,33 +16,33 @@
 
         <div class="letra">
             <h1 class="colorRosa">How to include GLAD</h1>
-            <h3 class="colorRosa">'Mini-guide'</h3>
+            <h3 class="colorRosa">Mini-guide</h3>
 
 
             <div class="separadorGrande"></div>
-            <p class="fecha">Update: Monday 10 July 2023</p>
+            <p class="fecha">Update: Wednesday 19 February 2025</p>
 
 
-            <p class="colorAmarillo">&#35;&#35;&#35; <b>This is only, if the Python script is NOT used and you want to manually include GLAD</b> &#35;&#35;&#35;</p>
+            <p class="colorAmarillo">&#35;&#35;&#35; <b>This applies only if the Python script is NOT used and you want to manually include GLAD</b> &#35;&#35;&#35;</p>
             <br>
-            <p>Most libraries (not all), are inside the folders of the operating system.
-            For that reason, the code refers to GLAD installed in the system.<br>
+            <p>Most libraries (not all) are located in system directories.
+            For this reason, the code typically refers to GLAD installed in the system:<br>
             <code class="colorRojo">#include <span>&#60;</span>glad/glad.h<span>&#62;</span></code></p>
             
-            <p>But the files downloaded from <a href="https://glad.dav1d.de/" target="_blank">https://glad.dav1d.de/</a>, are in our folders.
-            So, when we compile our project, the files of GLAD are not found.</p>
+            <p>However, the files downloaded from <a href="https://glad.dav1d.de/" target="_blank">https://glad.dav1d.de/</a> are stored in our local folders.
+            So, when compiling the project, GLAD files are not found.</p>
             
-            <p>Because, they are not in the system. They are where we have downloaded them!</p>
+            <p>Because they are not in the system directories; they remain where we downloaded them!</p>
 
 
             <div class="separadorChico"><span>&#32;</span></div>
 
 
-            <p>When the files are in the folders of the operating system, we must use the minor/major symbols <code class="colorRojo"><span>&#60;</span><span>&#32;</span><span>&#62;</span></code></p>
+            <p>When the files are in system directories, we must use angle brackets <code class="colorRojo"><span>&#60;</span><span>&#32;</span><span>&#62;</span></code></p>
             <p><u>Example:</u><br>
             <code class="colorRojo">#include <span>&#60;</span>glad/glad.h<span>&#62;</span></code></p>
             <br>
-            <p>If the files are in a custom folder, that not is of the operating system, we must use double quotes <code class="colorVerde">"<span>&#32;</span>"</code></p>
+            <p>If the files are in a custom folder (not a system directory), we must use double quotes <code class="colorVerde">"<span>&#32;</span>"</code></p>
             <p><u>Example:</u><br>
             <code class="colorVerde">#include "folder/glad/glad.h"</code></p>
 
@@ -50,34 +50,37 @@
             <div class="separadorChico"><span>&#32;</span></div>
 
 
-            <p>The .zip file created from <a href="https://glad.dav1d.de/" target="_blank">https://glad.dav1d.de/</a>, contains the same as downloading the <i>"include"</i> and <i>"src"</i> folders for separate.</p>
-            <p>That two folders also appear in the list of files to download, once we have generated the files by pressing the <i>"GENERATE"</i> button at the bottom of the web page.</p>
+            <p>The .zip file generated from <a href="https://glad.dav1d.de/" target="_blank">https://glad.dav1d.de/</a> contains the same files as if we had downloaded the <i>"include"</i> and <i>"src"</i> folders separately.</p>
+            <p>These two folders also appear in the list of available downloads after generating the files by pressing the <i>"GENERATE"</i> button at the bottom of the webpage.</p>
             <br>
-            <p class="colorAmarillo">&#35;&#35;&#35; <b>This is NOT the compatibility profile, is only the core of OpenGL</b> &#35;&#35;&#35;</p>
+            <p class="colorAmarillo">&#35;&#35;&#35; <b>This is NOT the compatibility profile, only the OpenGL core</b> &#35;&#35;&#35;</p>
             <a href="glad001.png" target="_blank"><img class="imagenesGlad" src="glad001.png" alt="Glad site"></a>
             <br>
             <br>
             <br>
-            <p>Download the .zip file, or the folders. <u>Not all!</u></p>
+            <p>Download the .zip file or the individual folders, <u>but not everything!</u></p>
             <a href="glad002.png" target="_blank"><img class="imagenesGlad" src="glad002.png" alt="Glad files"></a>
 
 
             <div class="separadorChico"><span>&#32;</span></div>
 
-
-            <p>Then in the same location where our <i>"main.cpp"</i> file is, copy the <i>"glad.c"</i> file that is in the <i>"src"</i> folder that we have downloaded and delete the <i>"src"</i> folder (we don't longer need the <i>"src"</i> folder, because we have copied the <i>"glad.c"</i> file inside our project).</p>
-            <p>Also in the same location where our <i>"main.cpp"</i> file is, copy the entire <i>"include"</i> folder downloaded (it contains the <i>"KHR"</i> and <i>"glad"</i> folders).</p>
-            <p>Make sure that in the top of your <i>"main.cpp"</i> file and out of the <i>"main( )"</i> method, you was put the <i>"#include"</i> with the path of our <i>"include"</i> folder using double quotes <code class="colorVerde">"<span>&#32;</span>"</code> not <code class="colorRojo"><span>&#60;</span><span>&#32;</span><span>&#62;</span></code></p>
-            <p>Open the <i>"main.cpp"</i> file and edit the <i>"#include"</i>, to use our path with double quotes!<br>
+            <p>Once downloaded:</p>
+            <p>1. In the same location as your <code>main.cpp</code> file is, file, copy the <code>glad.c</code> file from the <code>src</code> folder and then delete the <code>src</code> folder (it is no longer needed since we have copied <code>glad.c</code> into our project).</p>
+            <p>2. Also, in the same location as <code>main.cpp</code>, copy the entire <code>include</code> folder (which contains the <code>KHR</code> and <code>glad</code> subfolders).</p>
+            
+            <p>Make sure that at the top of your <code>main.cpp</code> file, outside the <code>main( )</code> function, you include the GLAD header using double quotes <code class="colorVerde">"<span>&#32;</span>"</code> instead of <code class="colorRojo"><span>&#60;</span><span>&#32;</span><span>&#62;</span></code></p>
+            
+            <p>Open <code>main.cpp</code> and update the <code>#include</code> statement to use the correct path:<br>
             <code class="colorVerde">#include "include/glad/glad.h"</code></p>
 
 
             <div class="separadorChico"><span>&#32;</span></div>
 
 
-            <p>In my case, I had to modify the <i>"#include"</i> that is inside of the <i>"glad.c"</i> file.</p>
-            <p>So, <i>"glad.c"</i> can find our location of the header file <i>"glad.h"</i> using also double quotes <code class="colorVerde">"<span>&#32;</span>"</code> not <code class="colorRojo"><span>&#60;</span><span>&#32;</span><span>&#62;</span></code></p>
-            <p>Open the <i>"glad.c"</i> file and modify it, to use our path with double quotes!</p>
+            <p>In some cases, you may also need to modify the <code>#include</code> directive inside <code>glad.c</code></p>
+            <p>This ensures that <code>glad.c</code> can find the correct location of <code>glad.h</code>, also using double quotes <code class="colorVerde">"<span>&#32;</span>"</code> instead of <code class="colorRojo"><span>&#60;</span><span>&#32;</span><span>&#62;</span></code></p>
+            
+            <p>Open <code>glad.c</code> and update the <code>#include</code> statement!</p>
             <p><u>Original:</u><br>
             <code class="colorRojo">#include <span>&#60;</span>glad/glad.h<span>&#62;</span></code></p>
             <p><u>Modified:</u><br>
@@ -87,37 +90,51 @@
             <div class="separadorChico"><span>&#32;</span></div>
 
 
-            <p>Also for create the library file of GLAD, I compile the <i>"glad.c"</i> file using <i>"clang"</i>
-            (so if it is not there yet, should install the clang compiler to make this in the same manner that show here) and run in a terminal this command.<br>
+            <p>To create the GLAD library file, compile <code>glad.c</code> using <code>clang</code>
+            If <code>clang</code> is not installed, you will need to install it before proceeding.<br>
+            Run the following command in a terminal:
             <code class="colorAmarillo">clang -c glad.c</code></p>
-            <p>And in the same place where the <i>"o"</i> file from the compilation made with <i>"clang"</i> is, execute in a terminal the <i>"ar"</i> command for generate an .a file (same thing with "ar" program... if you don't have this, you need to install it).<br>
+            
+            <p>After compilation, an object file (<code>glad.o</code>) will be created.<br>
+            Next, use the <code>ar</code> command to generate a static <code>.a</code> library file. If <code>ar</code> is not installed, you will need to install it.<br>
             <code class="colorAmarillo">ar rcs libglad.a glad.o</code></p>
-            <p>In this case the <i>"ar"</i> command is used to make the library static, so the linker does not dynamically search for the library in the folders of the operating system.</p>
-            <p>Only the static .a file from our <i>"lib"</i> folder will be used (we must manually place the .a file, inside our <i>"lib"</i> folder).</p>
+            
+            <p>The <code>ar</code> command is used here to create a static library so that the linker does not dynamically search for the library in system directories.</p>
+            <p>The static <code>.a</code> file should be manually placed inside the <code>lib</code> folder of our project.</p>
 
 
             <div class="separadorChico"><span>&#32;</span></div>
 
 
-            <p>I have this folder structure...</p>
+            <p>Folder Structure</p>
+            <p>The following files and folders should be in the same location:</p>
+            <ul>
+                <li><code>include</code> (folder)</li>
+                <li><code>lib</code> (folder)</li>
+                <li><code>main.cpp</code> (file)</li>
+                <li><code>glad.c</code> (file)</li>
+            </ul>
             <a href="folders.png" target="_blank"><img class="imagenCarpetas" src="folders.png" alt="Folders"></a>
-            <p>The <i>"include"</i> folder, the <i>"lib"</i> folder, the <i>"main.cpp"</i> file and the <i>"glad.c"</i> file are all inside the same location!</p>
 
 
             <div class="separadorChico"><span>&#32;</span></div>
 
 
-            <p><u>And for example, to compile:</u><br>
-            <code class="colorAmarillo">g++ main.cpp glad.c -o output <span class="colorVerde">-Lfolder -lglad -lglfw3</span></code></p>
-            <p>The option: <code class="colorAmarillo">-o output</code>, is used to select a name for the executable file that will be created when the project has finished compiling and from which our final program will be executed (in this case, it is called: <i>"output"</i>). You can change <i>"output"</i>, with whatever name you want (to avoid problems, don't use spaces or strange characters).</p>
-            <p>The option: <code class="colorVerde">-L</code>, set the path where we have our <i>"lib"</i> folder.</p>
-            <p>And with the option: <code class="colorVerde">-l</code>, we put the names of the libraries used by our project (one <i>"-l"</i>, for each library we are using).</p>
+            <p><u>Compilation Example</u></p><br>
+            <p>To compile the project, use the following command:</p>
+            <p><code class="colorAmarillo">g++ main.cpp glad.c -o output <span class="colorVerde">-Lfolder -lglad -lglfw3</span></code></p>
+            <ul>
+                <li>The <code>-o output</code> option specifies the name of the executable file that will be created after compilation (in this case, <code>output</code>). You can change <code>output</code> to any other name, but avoid spaces or special characters.</li>
+                <li>The <code>-L</code> option specifies the path where the <code>lib</code> folder is located.</li>
+                <li>The <code>-l</code> option specifies the libraries used in the project (one <code>-l</code> flag per library).</li>
+            </ul>
 
 
             <div class="separadorChico"><span>&#32;</span></div>
 
 
-            <p>To run our program, execute in a terminal the <i>"output"</i> file generated by the compiler (adding a dot and a forward slash, before the name of the output file) and hit enter.<br>
+            <p>Running the Program</p><br>
+            <p>To execute the compiled program, run the following command in the terminal:</p>
             <code class="colorAmarillo">./output</code></p>
 
 
